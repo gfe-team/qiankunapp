@@ -1,0 +1,61 @@
+{
+  "name": "app4",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "start:craco": "set PORT=8084 && craco start FAST_REFRESH=true",
+    "build:craco": "set GENERATE_SOURCEMAP=false && craco build",
+    "analyzer:craco": "env NODE_ENV=production BUILD_ANALYZER=true yarn start",
+    "test:craco": "craco test",
+    "build:single-spa": "craco build",
+    "serve:single-spa": "npm run start:craco"
+  },
+  "dependencies": {
+    "@craco/craco": "^6.4.3",
+    "antd": "^4.18.5",
+    "axios": "^0.25.0",
+    "craco-alias": "^3.0.1",
+    "craco-antd": "^1.19.0",
+    "craco-less": "^2.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^6.2.1",
+    "react-scripts": "5.0.0",
+    "rxjs": "^7.5.2",
+    "typescript": "^4.5.5",
+    "web-vitals": "^2.1.4"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.4.0",
+    "@types/node": "^16.11.21",
+    "@types/react": "^17.0.38",
+    "@types/react-dom": "^17.0.11",
+    "simple-progress-webpack-plugin": "^2.0.0",
+    "webpackbar": "^5.0.2"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
