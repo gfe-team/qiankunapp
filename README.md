@@ -26,7 +26,7 @@ app5:子应用,React17 + Typescript + antd + react-scripts<br />
 为了能看到整体效果,需要将全部项目运行起来,并在主应用中进行访问.<br />
 项目整体运行:<br />
 1.进入主应用appbase,执行:npm run serve / npm start<br />
-2.分别进去各子应用app1-app5, 执行:npm run serve:single-spa<br />
+2.分别在各子应用app1-app5下执行:npm run serve:single-spa<br />
 3.全部启动成功后, 访问主应用地址:http://localhost:8080<br />
 
 ## 如何部署
