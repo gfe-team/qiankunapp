@@ -25,7 +25,7 @@ app5:子应用,React17 + Typescript + antd + react-scripts<br />
 微服务理论上各个应用都是可以独立运行的. 在实际开发中为了方便, 我们也通常在独立运行的子应用上进行调试.<br />
 为了能看到整体效果,需要将全部项目运行起来,并在主应用中进行访问.<br />
 项目整体运行:<br />
-1.进入主应用appbase,执行:npm run dev<br />
+1.进入主应用appbase,执行:npm run serve / npm start<br />
 2.分别进去各子应用app1-app5, 执行:npm run serve:single-spa<br />
 3.全部启动成功后, 访问主应用地址:http://localhost:8080<br />
 
